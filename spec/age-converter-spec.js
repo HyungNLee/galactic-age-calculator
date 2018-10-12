@@ -50,4 +50,9 @@ describe('Age Converter', function() {
     let venusLifeLeft = inputDate.venusLifeLeft();
     expect(venusLifeLeft).toEqual(75);
   });
+
+  it('should test marsLifeLeft() for proper value', function() {
+    let marsLifeLeft = inputDate.marsLifeLeft();
+    expect(marsLifeLeft).toEqual(24);
+  });
 });

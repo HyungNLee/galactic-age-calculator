@@ -122,5 +122,9 @@ export class AgeConverter {
   venusLifeLeft() {
     return Math.floor((this.lifeExpectancy*365)/224.70) - this.venusAge;
   }
+
+  marsLifeLeft() {
+    return Math.floor(this.lifeExpectancy/1.8808476) - this.marsAge;
+  }
   
 }
