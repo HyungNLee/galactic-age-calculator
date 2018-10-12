@@ -43,21 +43,21 @@ describe('Age Converter', function() {
 
   it('should test mercuryLifeLeft() for proper value', function() {
     let mercuryLifeLeft = inputDate.mercuryLifeLeft();
-    expect(mercuryLifeLeft).toEqual(192);
+    expect(mercuryLifeLeft).toEqual("You have 192 years left to live on Mercury.");
   });
 
   it('should test venusLifeLeft() for proper value', function() {
     let venusLifeLeft = inputDate.venusLifeLeft();
-    expect(venusLifeLeft).toEqual(75);
+    expect(venusLifeLeft).toEqual("You have 75 years left to live on Venus.");
   });
 
   it('should test marsLifeLeft() for proper value', function() {
     let marsLifeLeft = inputDate.marsLifeLeft();
-    expect(marsLifeLeft).toEqual(24);
+    expect(marsLifeLeft).toEqual("You have 24 years left to live on Mars.");
   });
 
   it('should test jupiterLifeLeft() for proper value', function() {
     let jupiterLifeLeft = inputDate.jupiterLifeLeft();
-    expect(jupiterLifeLeft).toEqual(4);
+    expect(jupiterLifeLeft).toEqual("You have 4 years left to live on Jupiter.");
   });
 });

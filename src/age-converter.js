@@ -116,19 +116,36 @@ export class AgeConverter {
   }
 
   mercuryLifeLeft() {
-    return Math.floor((this.lifeExpectancy*365)/87.97) - this.mercuryAge;
+    let lifeLeft = Math.floor((this.lifeExpectancy*365)/87.97) - this.mercuryAge;
+    return this.lifeReturnMessage(lifeLeft, "Mercury");
   }
 
   venusLifeLeft() {
-    return Math.floor((this.lifeExpectancy*365)/224.70) - this.venusAge;
+    let lifeLeft = Math.floor((this.lifeExpectancy*365)/224.70) - this.venusAge;
+    return this.lifeReturnMessage(lifeLeft, "Venus");
   }
 
   marsLifeLeft() {
-    return Math.floor(this.lifeExpectancy/1.8808476) - this.marsAge;
+    let lifeLeft = Math.floor(this.lifeExpectancy/1.8808476) - this.marsAge;
+    return this.lifeReturnMessage(lifeLeft, "Mars");
   }
 
   jupiterLifeLeft() {
-    return Math.floor(this.lifeExpectancy/11.862615) - this.jupiterAge;
+    let lifeLeft = Math.floor(this.lifeExpectancy/11.862615) - this.jupiterAge;
+    return this.lifeReturnMessage(lifeLeft, "Jupiter");
   }
   
+  lifeReturnMessage(lifeLeft, planet) {
+    if (lifeLeft < -1) {
+      return `You have lived ${-lifeLeft} years past your ${planet} life expectancy!`;
+    } else if (lifeLeft === -1) {
+      return `You have lived ${-lifeLeft} year past your ${planet} life expectancy!`;
+    } else if (lifeLeft === 0) {
+      return `You have die this year on ${planet}.`;
+    } else if (lifeLeft === 1) {
+      return `You have ${lifeLeft} year left to live on ${planet}.`;
+    } else {
+      return `You have ${lifeLeft} years left to live on ${planet}.`;
+    }
+  }
 }
