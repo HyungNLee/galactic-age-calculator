@@ -126,5 +126,9 @@ export class AgeConverter {
   marsLifeLeft() {
     return Math.floor(this.lifeExpectancy/1.8808476) - this.marsAge;
   }
+
+  jupiterLifeLeft() {
+    return Math.floor(this.lifeExpectancy/11.862615) - this.jupiterAge;
+  }
   
 }

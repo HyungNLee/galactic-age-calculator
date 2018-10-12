@@ -55,4 +55,9 @@ describe('Age Converter', function() {
     let marsLifeLeft = inputDate.marsLifeLeft();
     expect(marsLifeLeft).toEqual(24);
   });
+
+  it('should test jupiterLifeLeft() for proper value', function() {
+    let jupiterLifeLeft = inputDate.jupiterLifeLeft();
+    expect(jupiterLifeLeft).toEqual(4);
+  });
 });
