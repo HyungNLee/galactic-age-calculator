@@ -100,15 +100,15 @@ export class AgeConverter {
   }
 
   getMercuryAge() {
-    return Math.floor(this.earthAge*(365/87.97));
+    return Math.floor(this.totalDaysAlive/87.97);
   }
 
   getVenusAge() {
-    return Math.floor(this.earthAge*(365/224.70));
+    return Math.floor(this.totalDaysAlive/224.70);
   }
 
   getMarsAge() {
-    return Math.floor(this.earthAge/1.8808476);
+    return Math.floor(this.totalDaysAlive/(365*1.8808476));
   }
 
   getJupiterAge() {

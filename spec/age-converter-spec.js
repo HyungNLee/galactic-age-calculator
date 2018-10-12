@@ -23,16 +23,16 @@ describe('Age Converter', function() {
 
   it('should test getMercuryAge() for proper value', function() {
     let mercuryAge = inputDate.mercuryAge;
-    expect(mercuryAge).toEqual(116);
+    expect(mercuryAge).toEqual(119);
   });
 
   it('should test getVenusAge() for proper value', function() {
     let venusAge = inputDate.venusAge;
-    expect(venusAge).toEqual(45);
+    expect(venusAge).toEqual(46);
   });
 
   it('should test getMarsAge() for proper value', function() {
     let marsAge = inputDate.marsAge;
-    expect(marsAge).toEqual(14);
+    expect(marsAge).toEqual(15);
   });
 });
