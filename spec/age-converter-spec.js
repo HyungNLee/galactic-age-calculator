@@ -35,4 +35,19 @@ describe('Age Converter', function() {
     let marsAge = inputDate.marsAge;
     expect(marsAge).toEqual(15);
   });
+
+  it('should test getJupiterAge() for proper value', function() {
+    let jupiterAge = inputDate.jupiterAge;
+    expect(jupiterAge).toEqual(2);
+  });
+
+  it('should test mercuryLifeLeft() for proper value', function() {
+    let mercuryLifeLeft = inputDate.mercuryLifeLeft();
+    expect(mercuryLifeLeft).toEqual(192);
+  });
+
+  it('should test venusLifeLeft() for proper value', function() {
+    let venusLifeLeft = inputDate.venusLifeLeft();
+    expect(venusLifeLeft).toEqual(75);
+  });
 });

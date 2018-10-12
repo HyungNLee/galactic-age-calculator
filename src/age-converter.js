@@ -11,7 +11,7 @@ export class AgeConverter {
     this.mercuryAge = this.getMercuryAge();
     this.venusAge = this.getVenusAge();
     this.marsAge = this.getMarsAge();
-    this.jupiterAge;
+    this.jupiterAge = this.getJupiterAge();
     this.lifeExpectancy = lifeExpectancy;
   }
 
@@ -112,8 +112,15 @@ export class AgeConverter {
   }
 
   getJupiterAge() {
-
+    return Math.floor(this.totalDaysAlive/(365*11.862615));
   }
 
+  mercuryLifeLeft() {
+    return Math.floor((this.lifeExpectancy*365)/87.97) - this.mercuryAge;
+  }
+
+  venusLifeLeft() {
+    return Math.floor((this.lifeExpectancy*365)/224.70) - this.venusAge;
+  }
   
 }
