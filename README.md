@@ -18,7 +18,7 @@ An app that will calculate the user's age on the planets of Venus, Mars, Jupiter
 ## Setup/Installation Requirements
 
   - Clone this repository from https://github.com/HyungNLee/galactic-age-calculator.git
-  - Navigate to the "galactic-age-calculator" folder in your terminal. Type "npm i" to configure install necessary plugins.
+  - Navigate to the "galactic-age-calculator" folder in your terminal. Type "npm i" to install necessary plugins.
   - Type in "npm run start" to start the app in your Chrome browswer.
 
 ## Known Bugs
